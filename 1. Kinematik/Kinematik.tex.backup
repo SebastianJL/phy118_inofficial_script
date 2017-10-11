@@ -36,7 +36,7 @@
 
 \begin{document}
 \title{PHY118/119 \\ {\bf Übungsstunde 1, Kinematik}}
-\author{Autor: Simon Flury \\ Co-Autoren: Nik Dennler, Johannes Lade  \\ Email: simon.flury@uzh.ch \\\\ }
+\author{Autor: Simon Flury \\ Co-Autoren: Nik Dennler, Johannes Lade \\\\ }
 \maketitle
 
 \section{Achtung!}
@@ -101,20 +101,20 @@ v = \sqrt{v_x^2 + v_y^2} \\
 y = x \cdot tan(\alpha)-\dfrac{gx^2}{2v_0^2cos(\alpha)^2}
 \end{split}
 \end{equation}
-dabei bezeichnet $x_w$ die Wurfweite (spricht die Distanz in x-Richtung) $\Delta x$ und $y$ die Wurfhöhe an der Stelle $x$.
-Der schiefe Wurf ist eine Kombination der vorherigen Fälle. Auch er enthält eine maximale Steighöhe, in der jedoch nicht $v = 0$ sondern $v_y = 0$ gilt, da wiederum die Gravitationsbeschleunigung nur die y-Komponente beeinflusst. Dies bedeutet, die Extremalstelle zeichnet sich durch $\dfrac{d}{dt} v_y = 0$ aus. Aufgrund der Periodizität der trigonometrischen Funktionen ergeben sich jeweils mehrere Lösungen, die physikalisch Sinnvolle ist auszuwählen.
+dabei bezeichnet $x_w$ die Wurfweite spricht die Distanz in x-Richtung $\Delta x$ und $y$ die Wurfhöhe an der Stelle $x$.
+Der schiefe Wurf ist eine Kombination der vorherigen Fälle. Auch er enthält eine maximale Steighöhe in der jedoch nicht $v = 0$ sonder $v_y = 0$ gilt, da wiederum die Gravitationsbeschleunigung nur die y-Komponente beeinflusst. Dies bedeutet, die Extremalstelle zeichnet sich durch $\dfrac{d}{dt} v_y = 0$ aus. Durch die trigonometrischen Funktionen ergeben sich jeweils mehrere Lösungen, aufgrund der Periodizität der Funktionen.
 
-\newpage
 \section{Messungen und Messfehler}
-Jede Messung ist fehlerbehaftet, dass bedeutet, das mit jeder Messgrösse eine bestimmte Unsicherheit einhergeht. Ein Messergebnis ohne Angabe der Messunsicherheit ist somit wertlos!\\
-Schreibweise: \textit{(Messergebnis +/- Messunsicherheit) Einheit} \\
-Ergebnis und Unsicherheit müssen die gleiche Anzahl Stellen haben. \\ Bsp.: $v = (1.08 \pm 0.10) \dfrac{m}{s}$ und nicht $v=(1.08 \pm 0.1) \dfrac{m}{s}$.\\
-\\Es gibt zwei Arten von Messunsicherheiten: die Systematischen und die Statistischen. Systematische Fehler kommen zum Beispiel durch eine falsche Eichung der Messgeräte zustande. Sie zeichen sich dadurch aus, dass die Abweichungen bei Wiederholung der Messung unter gleichen Bedingungen immer gleich sind. Statistische Fehler sind zufällige Fehler und zeichnen sich dadurch aus, dass bei Wiederholung der Messung die Abweichungen immer anders sind. Nur diesen Fehler können wir mit statistischen Methoden Rechnung tragen.\\
-\\ An dieser Stelle soll nicht weiter auf die Berechnung von Fehlern eingegane werden, da dies uns sofort auf die Gauss'sche Fehlerfortpflanzung führen würde, wofür wir aber erst partielle Ableitungen einführen müssten. Dazu später mehr.
+Jede Messung ist Fehlerbehaftet, dass bedeutet das mit jeder Messgrösse eine bestimmte Unsicherheit einhergeht. Ein Messergebnis ohne Angabe der Messunsicherheit ist somit wertlos!\\
+Schreibweise: (Messergebnis +/- Messunsicherheit) Einheit \\
+Ergebnis und Unsicherheit müssen die gleiche Anzahl Stellen haben z.B. $v = (1.08 \pm 0.10) \dfrac{m}{s}$ und nicht $v=(1.08 \pm 0.1) \dfrac{m}{s}$.\\
+\\Es gibt zwei Arten von Messunsicherheiten, systematische und statistische. Systematische Fehler kommen zum Beispiel durch eine falsche Eichung der Messgeräte zustande. Sie zeichen sich dadurch aus, dass die Abweichungen bei Wiederholung der Messung unter gleichen Bedingungen immer gleich sind. Statistische Fehler sind zufällige Fehler und zeichnen sich dadurch aus, dass bei Wiederholung der Messung die Abweichungen immer anders sind. Nur diesen Fehler können wir mit statistischen Methoden Rechnung tragen.\\
+\\In der Aufgabe 5 vom Blatt 1 wurde euch eine Unsicherheit auf eine Messgrössen gegeben $\Delta x = 1cm$. Hierbei handelt es sich um einen statistischen Messfehler. Ihr wisst nun dass ihr mit der Formel $\dfrac{\Delta v}{v} = \dfrac{\Delta x}{x}$ den Fehler auf die Geschwindigkeit berechnen könnt. Hättet ihr zudem noch einen Fehler auf die Zeit, könntet ihr diesen Fall analog zum ersten berechnen, mit zusätzlichem Zeitterm $\dfrac{\Delta v}{v} = \dfrac{\Delta x}{x} + \dfrac{\Delta t}{t}$\\
+\\ Ich möchte an dieser Stelle nicht weiter auf die Berechnung von Fehlern eingehen, da dies uns sofort auf die Gauss'sche Fehlerfortpflanzung führen würde, wofür wir aber erst partielle Ableitungen einführen müssten. Dazu später mehr.
 
 
 \section{Differentialrechnung}
-\textit{Ausreichende Kurzzusammenfassung zur Differentialrechnung}\\
+Hier möchte ich nochmals eine kleine Zusammenfassung geben, welche für diese Vorlesung sicher ausreichen sollte.\\
 \\
 Eine Funktion heisst differenzierbar an der Stelle $x_0$, wenn gilt:
 
@@ -123,7 +123,7 @@ Eine Funktion heisst differenzierbar an der Stelle $x_0$, wenn gilt:
 \end{equation}
 
 wobei $h = x-x_0$\\
-\\ Die geometrische Bedeutung der Ableitung ist die Steigung der Tangente am Punkt $x_0$.
+\\ Die geometrische bedeutung der Ableitung ist die Steigung der Tangente am Punkt $x_0$.
 \subsection{Regeln}
 Konstante Funktion:
 \begin{equation}
@@ -185,33 +185,19 @@ Wir verwenden hier das sogennate Riemann-Integral. Dieses ist definiert als Riem
 \int_{a}^b f(x)\, \mathrm{dx} = \lim_{n \to \ \infty } \sum\nolimits_{i=1}^n f(x_i) \Delta x
 \end{equation}
 was geometrisch gesehen einfach die Fläche unter der Kurve, approximiert als Summe von Rechtecken mit der Höhe $f(x_i)$ und der Breite $\Delta x$, darstellt.
-\begin{figure}[H]
-  \centering{\includegraphics[width=0.45\textwidth]{Riemann.png}}
-  \caption{Riemann'sches Stufenintegral}
-  \label{fig:1teil}
-\end{figure} 
-
 \subsection{Sätze und Definitionen}
-\subsubsection*{Allgemeine Regeln}
 \begin{equation}
-\int_{b}^b f(x)\, \mathrm{dx} = 0
+\int_{b}^b f(x)\, \mathrm{dx} = 0 \ \ \mathrm{and} \int_{b}^c f(x)\, \mathrm{dx} = -\int_{c}^b f(x)\, \mathrm{dx}
 \end{equation}
-
-\begin{equation}
-\int_{b}^c f(x)\, \mathrm{dx} = -\int_{c}^b f(x)\, \mathrm{dx}
-\end{equation}
-
-
-\subsubsection*{Intervalladditivität}
+Intervalladditivität:
 \begin{equation}
 \int_{a}^b f(x)\, \mathrm{dx} = \int_{a}^c f(x)\, \mathrm{dx} + \int_{c}^b f(x)\, \mathrm{dx}
 \end{equation}
-\subsubsection*{Hauptsatz der Differential- und Integralrechnung}
-Seien $f\colon I \to R$ stetig und $a \in I$. Dann ist die Integralfunktion zu $a$ 
+Hauptsatz der Differential- und Integralrechnung:\\
+\\ Seien $f\colon I \to R$ stetig und $a \in I$. Dann ist die Integralfunktion zu $a$ 
 $F_a\colon I \to R, \ \ x \mapsto \int_{a}^x f(x)\, \mathrm{dx}$
 differenzierbar und es gilt $F_a'(x) = f(x) \ \ \forall x \in I$\\
-\subsubsection*{Stammfunktion} 
-Eine Funktion $F$ heisst Stammfunktion der Funktion $f$, wenn $F' = f$ gilt.\\
+\\ Stammfunktion: Eine Funktion $F$ heisst Stammfunktion der Funktion $f$, wenn $F' = f$ gilt.\\
 \\ Ist $F$ eine Stammfunktion von $f$, dann gilt: $G$ ist Stammfunktion von $f \Leftrightarrow  \exists c \in R : G(x) = F(x) +c$\\
 (dies bedeutet einfach, dass eure Stammfunktion nur bis auf eine Konstante bestimmt ist).\\
 \\ Das Integral $\int f(x) dx := G(x)$ ist das unbestimmte Integral von $f$\\
@@ -219,14 +205,14 @@ Eine Funktion $F$ heisst Stammfunktion der Funktion $f$, wenn $F' = f$ gilt.\\
 \begin{equation}
 \int_{a}^b f(x)\, \mathrm{dx} = F(b)-F(a)
 \end{equation}
-\subsubsection*{Summen und Faktoregel}
+Summen und Faktoregel:
 \begin{equation}
 \int_{a}^b f(x) + g(x)\, \mathrm{dx} = \int_{a}^b f(x)\, \mathrm{dx} + \int_{a}^b g(x)\, \mathrm{dx}
 \end{equation}
 \begin{equation}
 \int_{a}^b cf(x)\, \mathrm{dx} = c \int_{a}^b f(x)\, \mathrm{dx}
 \end{equation}
-\subsubsection*{Substitutionsregel}
+Substitutionsregel:
 \begin{equation}
 \int_{a}^b f( \varphi (x)) \cdot \varphi'(x) \, \mathrm{dx} = \int_{\varphi(a)}^{\varphi(b)} f(x)\, \mathrm{dx}
 \end{equation}
@@ -235,7 +221,7 @@ $\int_{3}^5 \dfrac{2x}{(1+x^2)^2}\, \mathrm{dx}$\\
 Vorgehen: 1. Im Integranden einen Term $\varphi(x)$ suchen, dessen Ableitung $\varphi(x)'$ ebenfalls im Integranden enthalten ist. In diesem Beispiel ist es der Term $\varphi(x) = 1+x^2$ und $\varphi'(x) = 2x$.\\
 2. erkenne die Funktion $f$ im Integranden, so dass $f(\varphi(x)) \cdot \varphi(x)'$ der Integrand ist. In unserem Beispiel also $f(x) = \dfrac{1}{x^2} \rightarrow f(\varphi(x)) \cdot \varphi(x)' = \dfrac{1}{(1+x^2)^2} \cdot 2x = \dfrac{2x}{(1+x^2)^2}$ damit wird unser Integral zu $\int_{10}^{26} \dfrac{1}{x^2}\, \mathrm{dx} = -\dfrac{1}{x} \mid_{10}^{26} = \dfrac{4}{65}$\\
 \\
-\subsubsection*{Partielle Integration}
+Partielle Integration:
 \begin{equation}
 \int_{a}^b f(x) \cdot g(x)\, \mathrm{dx} = f(x)G(x) \mid_a^b - \int_{a}^b f'(x)G(x)\, \mathrm{dx}
 \end{equation}
@@ -290,6 +276,6 @@ Unter verwendung der trigonometrischen Identität $2cos(\alpha)sin(\alpha) = sin
 \begin{equation}
 \dfrac{gR}{2} = v_0^2sin(\alpha)cos(\alpha) = \dfrac{1}{2} \cdot v_0^2sin(2\alpha) \rightarrow 2\alpha = arcsin \left(\dfrac{gR}{v_0^2} \right)
 \end{equation}
-Wie schon zu Beginn erläutert, erhält man zwei Lösungen für $\alpha$ aufgrund der Periodizität der trigonometrischen Funktionen.
+Wie schon zu Beginn erläutert erhält man zwei Lösungen für $\alpha$ aufgrund der Periodizität der trigonometrischen Funktionen.
 \end{document}
 

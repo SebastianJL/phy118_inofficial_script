@@ -168,28 +168,28 @@ Bei einen Zusammenstoss zweier Körper kommt es zu einer Impulsübetragung durch
 \vec{F}(t) = \dfrac{d\vec{p}}{dt} \rightarrow \vec{p}_f-\vec{p}_i = \int_i^f \vec{F} \cdot dt
 \end{equation}
 
-%\section{Aufgabe 1, Serie 4}
-%\begin{figure}[H]
-%  \centering{\includegraphics[width=0.4\textwidth]{Kiste.png}}
-%  \caption{Situation in der Aufgabe.}
-%  \label{fig:1teil}
-%\end{figure}
-%Nun ist in Teil a nach der Arbeit gefragt welche die Kraft$\tau$ verrichtet, sowie der Reibungsarbeit. Die Arbeit erhalten wir ganz einfach aus Kraft mal Weg und wenn ihr euch die Definition in Erinnerung ruft seht ihr sofort, dass wegem dem Konsinus des Skalarproduktes nur der zur x-Achse parallele Anteil der Kraft, Arbeit verrichtet. Somit gilt:
-%\begin{equation}
-%W_{\tau} = \tau \cdot s \cdot \cos{\alpha}
-%\end{equation}
-%Um nun noch die Reibungsarbeit zu berechen müssen wir erst die Normalkraft herausfinden, da $F_R = \mu_d F_N$\\
-%Der Körper erfährt keine resultierende Beschleunigung in y-Richtung, somit muss gelten: Summe der vertikalen Kräfte = 0.
-%\begin{equation}
-%F_N + \tau \cdot \sin{\alpha} = mg \rightarrow F_N = mg-\tau \sin{\alpha}
-%\end{equation}
-%daraus folgt direkt:
-%\begin{equation}
-%F_R = \mu_d \cdot (mg - \tau \sin{\alpha})
-%\end{equation}
-%Die Arbeit erhalten wir nun wieder wie üblich aus Kraft mal Weg.
-%\begin{equation}
-%W_R = F_R \cdot s = \mu_d \cdot s \cdot (mg - \tau \cdot sin{\alpha})
-%\end{equation}
+\section{Aufgabe 1, Serie 4}
+\begin{figure}[H]
+  \centering{\includegraphics[width=0.4\textwidth]{Kiste.png}}
+  \caption{Situation in der Aufgabe.}
+  \label{fig:1teil}
+\end{figure}
+Nun ist in Teil a nach der Arbeit gefragt welche die Kraft$\tau$ verrichtet, sowie der Reibungsarbeit. Die Arbeit erhalten wir ganz einfach aus Kraft mal Weg und wenn ihr euch die Definition in Erinnerung ruft seht ihr sofort, dass wegem dem Konsinus des Skalarproduktes nur der zur x-Achse parallele Anteil der Kraft, Arbeit verrichtet. Somit gilt:
+\begin{equation}
+W_{\tau} = \tau \cdot s \cdot \cos{\alpha}
+\end{equation}
+Um nun noch die Reibungsarbeit zu berechen müssen wir erst die Normalkraft herausfinden, da $F_R = \mu_d F_N$\\
+Der Körper erfährt keine resultierende Beschleunigung in y-Richtung, somit muss gelten: Summe der vertikalen Kräfte = 0.
+\begin{equation}
+F_N + \tau \cdot \sin{\alpha} = mg \rightarrow F_N = mg-\tau \sin{\alpha}
+\end{equation}
+daraus folgt direkt:
+\begin{equation}
+F_R = \mu_d \cdot (mg - \tau \sin{\alpha})
+\end{equation}
+Die Arbeit erhalten wir nun wieder wie üblich aus Kraft mal Weg.
+\begin{equation}
+W_R = F_R \cdot s = \mu_d \cdot s \cdot (mg - \tau \cdot sin{\alpha})
+\end{equation}
 
 \end{document}

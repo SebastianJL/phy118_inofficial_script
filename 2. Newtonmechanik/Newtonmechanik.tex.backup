@@ -58,10 +58,10 @@ Das 2.NA sagt somit aus, das die Kraft gleich der zeitlichen Änderung des Impul
 \begin{equation}
 \vec{F}_1 + \vec{F}_2 +...+ \vec{F}_n = \sum_{i=1}^n \vec{F}_i = \vec{F}_{res}
 \end{equation}
-Ist das System statisch, also bewegt sich der Körper nicht, so gilt $\vec{F}_{res} = 0 $, ist das System dynamisch, also bewegt sich der Körper so gilt $\vec{F}_{res} \ne 0$, dementsprechend wirkt eine resultierende Beschleunigung und der Körper erhält somit eine Geschwindigkeit in eine Richtung oder erfährt einen Richtungswechsel. Bei den Betrachtungen, die wir momentan tätigen, greifen die Kräfte immer im Schwerpunkt des Körpers an. Ist dies nicht der Fall, führt dies zu einem sogenannten Drehmoment (kommt später in der Vorlesung noch).
+Ist das System statisch, also bewegt sich der Körper nicht, so gilt $\vec{F}_{res} = 0 $, ist das System dynamisch, also bewegt sich der Körper so gilt $\vec{F}_{res} \ne 0$, dementsprechend wirkt eine resultierende Beschleunigung und der Körper erhält somit eine Geschwindigkeit in eine Richtung. Bei den Betrachtungen die wir momentan tätigen, greiffen die Kräfte immer im Schwerpunkt des Körpers an, ist dies nicht der Fall führt dies zu einem sogenannten Drehmoment (kommt später in der Vorlesung noch).
 \\
 \\
-Bewegt sich ein Körper auf einer Kreisbahn, erfährt er zwei Beschleunigungen: Eine tangentiale $a_{\varphi}$ und eine zum Zentrum gerichtete, die sogenannte Zentripetalbeschleunigung $a_r = \dfrac{v^2}{R}$
+Bewegt sich ein Körper auf einer Kreisbahn erfährt er zwei Beschleunigungen, eine tangentiale $a_{\varphi}$ und eine zum Zentrum gerichtete, die sogenannte Zentripetalbeschleunigung $a_r = \dfrac{v^2}{R}$
 \begin{figure}[H]
   \centering{\includegraphics[width=0.4\textwidth]{Kreisbahn.png}}
   \caption{Beschleunigungen auf Kreisbahn}
@@ -73,7 +73,7 @@ Merkt euch, da eine Beschleunigung auf eine Masse wirkt, wirkt eine Kraft, die s
 
 \item $\ddot{\varphi} = \dfrac{d\omega}{dt} = \beta$ ist die Winkelbeschleunigung
 \end{itemize}
-Diese Grössen beschreiben die zeitliche Änderung eines Winkels, also welche Winkeldifferenz wird in einem gewissen Zeitintervall überstrichen.
+diese grössen beschreiben die zeitliche Änderung eines Winkels, also welche Winkeldifferenz wird in einem gewissen Zeitintervall überstrichen.
 Mit diesen neuen Grössen kann man schreiben:
 \begin{equation}
 a_r = \dfrac{v^2}{R} = \omega^2R
@@ -81,13 +81,13 @@ a_r = \dfrac{v^2}{R} = \omega^2R
 \begin{equation}
 a_{\phi} = R\dfrac{d^2\varphi}{dt^2} = R\beta
 \end{equation}
-Diese beide Beschleunigungen stehen senkrecht aufeinander!
+Bitte seit euch bewusst, dass diese beiden Beschleunigungen senkrecht aufeinander stehen! (ist dies nicht klar fragt mich bitte in der Übungsstunde).\\
 \\
-Die Zentrifugalkraft ist vom Betrag her gleich der Zentripetalkraft, einfach vom Zentrum nach aussen gerichtet, also mit umgekehrten Vorzeichen. Diese Kraft ist jedoch nur ein kinematisches Produkt, eine sogenannte Scheinkraft. Dies bedeutet, dass sie vom eigenen Bezugssystem abhängt, bei einer Kreisbewegung befinden wir uns in einem beschleunigten Bezugssystem. Geht man über in ein Inertialsystem, verschwinden diese Scheinkräfte.
+Die Zentrifugalkraft ist vom Betrag her gleich der Zentripetalkraft, einfach vom Zentrum nach aussen gerichtet, also mit umgekehrten Vorzeichen. Diese Kraft ist jedoch nur ein kinematisches Produkt, eine Scheinkraft. Dies bedeutet, dass sie vom Bezugssystem abhängt indem man sich befindet, bei einer Kreisbewegung befinden wir uns in einem beschleunigten Bezugssystem. Geht man über in ein Inertialsystem verschwinden die Scheinkräfte. (Ich weiss nicht ob diese Begriffe in der Vorlesung eingeführt wurden, fals nicht kann ich sie euch in der Stunde kurz erklären, oder ihr könnt diesen Beitrag getrost ignorieren ;) )
 
 \section{Wahrscheinlichkeitsverteilungen}
-In der Vorlesung habt ihr zwei Arten von Wahrscheinlichkeitsverteilungen kennen gelernt, die Binomialverteilung und die Gaussverteilung (Normalverteilung)\\
-\subsection*{Binominalverteilung} Gibt Wahrscheinlichkeit für k-mal ein positives Ergebnis aus n Versuchen. Das bedeutet, der Ausgang jedes einzelnen Versuchs ist entweder positiv oder negativ.
+In der Vorlesung habt ihr zwei Arten von Wahrscheinlichkeitsverteilungen kennen gelernt, die Binimonalverteilung und die Gaussverteilung (Normalverteilung)\\
+\\Binominalverteilung: Gibt Wahrscheinlichkeit für k-mal ein positives Ergebnis aus n Versuchen. Das bedeutet, der Ausgang jedes einzelnen Versuchs ist entweder positiv oder negativ.
 \begin{equation}
 P(k|p,n) = \binom{n} {k} p^k(1-p)^{n-k}
 \end{equation}
@@ -98,8 +98,9 @@ Nun ist $n=20$, $k=5$ und $p=1/2$
 \begin{equation}
 P(5|1/2,20) = \binom{20} {5} 1/2^5(1-1/2)^{20-5} \approx 0.015 = 1.5\%
 \end{equation}
-\subsection*{Gaussverteilung}
-Gibt Wahrscheinlichkeit für einen bestimmtes Ereignis x, in einen Zufallsexperiment an.
+\\
+\\
+Gaussverteilung: Gibt Wahrscheinlichkeit für einen bestimmtes Ereignis x, in einen Zufallsexperiment an.
 \begin{equation}
 p(x|\mu,\sigma) = \dfrac{1}{\sqrt{2\pi \sigma^2}} \cdot exp\left(-\dfrac{(x-\mu)^2}{2\sigma^2} \right)
 \end{equation}
